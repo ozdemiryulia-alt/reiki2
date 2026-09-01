@@ -56,6 +56,9 @@ img{max-width:100%;display:block}
 @media (max-width:900px){
   .grid-2{grid-template-columns:1fr !important}
   .grid-3{grid-template-columns:1fr !important}
+  .otzyvy-text-grid{display:flex !important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px !important;padding:0 24px 8px;margin:0 -24px;background:none !important;border:none !important;border-radius:0 !important}
+  .otzyvy-text-grid::-webkit-scrollbar{display:none}
+  .otzyvy-text-grid > div{flex:0 0 85vw;scroll-snap-align:center;border-radius:6px;border:1px solid rgba(20,69,75,.12)}
   .grid-4{grid-template-columns:1fr 1fr !important}
   h1{font-size:52px !important}
   .hero-line1{font-size:32px !important}
@@ -361,7 +364,7 @@ img{max-width:100%;display:block}
   </div>
 
   <div class="wrap">
-    <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(20,69,75,.12);border:1px solid rgba(20,69,75,.12);border-radius:6px;overflow:hidden">
+    <div class="grid-3 otzyvy-text-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(20,69,75,.12);border:1px solid rgba(20,69,75,.12);border-radius:6px;overflow:hidden">
       <div style="background:#FCFBF8;padding:38px 32px;display:flex;flex-direction:column;gap:20px">
         <div style="font-family:'Prata',serif;font-size:56px;line-height:.6;color:#B08E63">&laquo;</div>
         <div style="font-size:17px;line-height:1.55;color:rgba(15,42,46,.82);flex:1">Это было удивительное путешествие. Простота и ясность во всём. Благодаря Рэйки я смогла пройти сложный период в моей жизни с верными решениями и практически без потерь. А сейчас я уже сама практик Рэйки.</div>
